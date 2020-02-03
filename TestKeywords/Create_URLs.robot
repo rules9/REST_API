@@ -7,6 +7,10 @@ ${urls}
 
 *** Keywords ***
 Initialize Array from CSV
-    ${urls}=      read csv file  TestData/URLs.csv
-Verify the array
+    [Arguments]   ${csv_path}
+    ${urls}=      read csv file     ${csv_path}
     log     ${urls}
+Array verified
+    [Arguments]     ${csv_path}
+    verify_array    ${urls}  ${csv_path}
+

@@ -1,7 +1,12 @@
 *** Settings ***
 Documentation       This file will cover the user story
-Resource            ../TestData/URLs.robot
+Resource            ../TestKeywords/Create_URLs.robot
+
+*** Variables ***
+${csv_path}     TestData/URLs.csv
 
 *** Test Cases ***
-1. Create URL array
-    1. reading the csv file and creating the urls variable
+1. Array of all the URLs given in csv should get created and verifed
+    Initialize Array from CSV   ${csv_path}
+    Array verified      ${csv_path}
+
