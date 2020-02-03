@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cd8e94c-0b83-4fd8-8088-a2879435f317" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PythonScripts/ArrayProcessor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonScripts/csvLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonScripts/csvLibrary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/testCase1.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/testCase1.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestData/URLs.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/Create_URLs.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestKeywords/Get_URLs.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/Get_URLs.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestKeywords/Create_URLs.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/Create_URLs.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestKeywords/Get_URLs.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/Response_URLs.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestReports/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestReports/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestReports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/report.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580720532723</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Completed the reporting for first test case">
+      <created>1580725899883</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580725899883</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,7 +195,8 @@
     <MESSAGE value="Initial Set-up and configuration" />
     <MESSAGE value="Added the Python Script file to Add the URLs vairable" />
     <MESSAGE value="Completed the CSV read for URLs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed the CSV read for URLs" />
+    <MESSAGE value="Completed the reporting for first test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed the reporting for first test case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

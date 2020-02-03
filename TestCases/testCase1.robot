@@ -10,3 +10,5 @@ ${csv_path}     TestData/URLs.csv
     Initialize Array from CSV   ${csv_path}
     Array verified      ${csv_path}
 
+2. Send the request to the server
+    Send the request

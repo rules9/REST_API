@@ -4,8 +4,6 @@ Library         RequestsLibrary
 Resource        TestData/Create_URLs.robot
 
 *** Variables ***
-${my_session}
-${base_url}
 
 *** Keywords ***
 1.
