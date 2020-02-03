@@ -6,13 +6,15 @@ Library         RequestsLibrary
 Library         Collections
 Library         String
 Library         ../PythonScripts/ArrayProcessor.py
+Library         urllib3
+Library          ../PythonScripts/RequestManager.py
 
 *** Variables ***
 ${urls}
-${my_session}
-${responses}
+${responses}    []
 ${response}
-${url}
+${url}          https://bit.ly/2MMhOhs
+${data}
 *** Keywords ***
 Initialize Array from CSV
     [Arguments]   ${csv_path}
@@ -27,10 +29,14 @@ Array verified
     verify_array    ${urls}  ${csv_path}
 
 Send the request
-    :FOR    ${url}  IN  @{urls}
-        \   create session      ${my_session}   ${url}
-        \   LOG                 ${url}
-        \   ${response}=        get request     ${my_session}   ${url}
-        \   lOG                 ${response}
-        \   append to list      ${responses}    ${response}
-        \   LOG                 ${responses}
+    ${data}=    request hit
+    log to console     ${data}
+#    create session   my_session  ${url}     verify=True
+#    ${response}=        GET REQUEST    my_session     ${url}    allow_redirects=${True}
+#    log to console      ${response.status_code}
+#    :FOR    ${url}  IN  @{urls}
+#        \   LOG                 ${url}
+#        \   ${response}=        get request    my_session     ${url}
+#        \   log to console      ${response.status_code}
+#        \   append to list      ${responses}    ${response}
+#        \   LOG                 ${responses}

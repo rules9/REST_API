@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cd8e94c-0b83-4fd8-8088-a2879435f317" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PythonScripts/ArrayProcessor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PythonScripts/RequestManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/testCase1.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/testCase1.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestData/URLs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/URLs.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestKeywords/Create_URLs.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/Create_URLs.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestKeywords/Get_URLs.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/Response_URLs.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestReports/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestReports/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestReports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/report.html" afterDir="false" />
@@ -39,6 +38,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="RecentsManager">
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580725899883</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Indivial URLs processed, response In-Progress">
+      <created>1580741757966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580741757966</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,7 +203,8 @@
     <MESSAGE value="Added the Python Script file to Add the URLs vairable" />
     <MESSAGE value="Completed the CSV read for URLs" />
     <MESSAGE value="Completed the reporting for first test case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed the reporting for first test case" />
+    <MESSAGE value="Indivial URLs processed, response In-Progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Indivial URLs processed, response In-Progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
