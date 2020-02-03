@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cd8e94c-0b83-4fd8-8088-a2879435f317" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TestCases/testCase1.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestData/URLs.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestKeywords/Get_URLs.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/Get_URLs.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/testCase1.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/testCase1.robot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +32,16 @@
   <component name="ProjectId" id="1XF7ETTQ5gdYyxzkiw7KbxK9gqV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Program Files/Git/mingw64/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC" />
+      <recent name="C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\venv" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\PyScripts" />
       <recent name="C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\venv\Lib\site-packages" />
     </key>
   </component>
@@ -53,6 +56,50 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="API_POC" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="API_POC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="API_POC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\shivam.raghuwanshi\AppData\Roaming\Subversion</configuration>
@@ -72,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580637221585</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added the Python Script file to Add the URLs vairable">
+      <created>1580640641185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580640641185</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +172,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Set-up and configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Set-up and configuration" />
+    <MESSAGE value="Added the Python Script file to Add the URLs vairable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the Python Script file to Add the URLs vairable" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonScripts/csvLibrary.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
