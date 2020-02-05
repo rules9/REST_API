@@ -8,14 +8,28 @@ Resource            generate_URLs.robot
 Library             thread
 
 *** Variables ***
-${response}
-
+${request_segment}
+${response1}
+${response2}
+${response3}
+${segment_counter1}      0
+${segment_counter2}      1
+${segment_counter3}      2
+${segment_counter4}      3
 
 *** Keywords ***
 Sending Requests to the server
-    ${response}=    request process         ${reshape_urls}
-    log to console      ${response}
-    log                 ${response}
+    ${request_segment}=     request_pre_processing      ${reshape_urls}
+    log to console          ${request_segment}
+
+#    ${response1}=           process_request             ${request_segment[0]}      ${segment_counter1}
+#    log to console          ${response1}
+#    ${response2}=           process_request             ${request_segment[1]}      ${segment_counter2}
+#    log to console          ${response2}
+#    ${response3}=           process_request             ${request_segment[0]}      ${segment_counter3}
+#    log to console          ${response3}
+
+
 
 
 
