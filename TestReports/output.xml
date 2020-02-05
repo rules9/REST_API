@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200205 18:58:36.362" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200205 20:43:21.048" rpa="false">
 <suite id="s1" name="testCase1" source="C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\TestCases\testCase1.robot">
 <test id="s1-t1" name="1. Array of all the URLs given in csv should get created and verifed">
 <kw name="Initialize URL Array from CSV" library="generate_URLs">
@@ -14,16 +14,16 @@
 <assign>
 <var>${urls}</var>
 </assign>
-<msg timestamp="20200205 18:58:37.173" level="INFO">${urls} = [['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/...</msg>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.173"></status>
+<msg timestamp="20200205 20:43:22.079" level="INFO">${urls} = [['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/...</msg>
+<status status="PASS" starttime="20200205 20:43:22.075" endtime="20200205 20:43:22.079"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${urls}</arg>
 </arguments>
-<msg timestamp="20200205 18:58:37.173" level="INFO">${urls} = [['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/...</msg>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.173"></status>
+<msg timestamp="20200205 20:43:22.080" level="INFO">${urls} = [['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/...</msg>
+<status status="PASS" starttime="20200205 20:43:22.079" endtime="20200205 20:43:22.080"></status>
 </kw>
 <kw name="Flat Array" library="arrayProcessor">
 <doc>This creates a keyword named "flat array"</doc>
@@ -33,41 +33,20 @@
 <assign>
 <var>${urls}</var>
 </assign>
-<msg timestamp="20200205 18:58:37.173" level="INFO">${urls} = ['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2...</msg>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.173"></status>
+<msg timestamp="20200205 20:43:22.081" level="INFO">${urls} = ['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2...</msg>
+<status status="PASS" starttime="20200205 20:43:22.080" endtime="20200205 20:43:22.081"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${urls}</arg>
 </arguments>
-<msg timestamp="20200205 18:58:37.173" level="INFO">${urls} = ['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2...</msg>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.173"></status>
+<msg timestamp="20200205 20:43:22.081" level="INFO">${urls} = ['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2...</msg>
+<status status="PASS" starttime="20200205 20:43:22.081" endtime="20200205 20:43:22.082"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${urls}</arg>
-</arguments>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.173"></status>
+<status status="PASS" starttime="20200205 20:43:22.074" endtime="20200205 20:43:22.082"></status>
 </kw>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.173"></status>
-</kw>
-<kw name="URL Array verified" library="generate_URLs">
-<arguments>
-<arg>${csv_path}</arg>
-</arguments>
-<kw name="Verify Array" library="csvLibrary">
-<doc>This creates a keyword "verify URL array"</doc>
-<arguments>
-<arg>${urls}</arg>
-<arg>${csv_path}</arg>
-</arguments>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.173"></status>
-</kw>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.173"></status>
-</kw>
-<status status="PASS" starttime="20200205 18:58:37.173" endtime="20200205 18:58:37.189" critical="yes"></status>
+<status status="PASS" starttime="20200205 20:43:22.073" endtime="20200205 20:43:22.082" critical="yes"></status>
 </test>
 <test id="s1-t2" name="2. Array URL distribution and corresponding Request-hit should get completed successfully">
 <kw name="Create Multiple URL Arrays Instance" library="generate_URLs">
@@ -85,124 +64,113 @@
 <var>${total_urls}</var>
 <var>${number_arrays}</var>
 </assign>
-<msg timestamp="20200205 18:58:37.205" level="INFO">27</msg>
-<msg timestamp="20200205 18:58:37.205" level="INFO">${reshape_urls} = [['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
+<msg timestamp="20200205 20:43:22.084" level="INFO">27</msg>
+<msg timestamp="20200205 20:43:22.084" level="INFO">${reshape_urls} = [['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs' 'https://bit.ly/2...</msg>
-<msg timestamp="20200205 18:58:37.205" level="INFO">${total_urls} = 27</msg>
-<msg timestamp="20200205 18:58:37.205" level="INFO">${number_arrays} = 2</msg>
-<status status="PASS" starttime="20200205 18:58:37.189" endtime="20200205 18:58:37.205"></status>
+<msg timestamp="20200205 20:43:22.084" level="INFO">${total_urls} = 27</msg>
+<msg timestamp="20200205 20:43:22.084" level="INFO">${number_arrays} = 2</msg>
+<status status="PASS" starttime="20200205 20:43:22.084" endtime="20200205 20:43:22.084"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${reshape_urls}</arg>
 </arguments>
-<msg timestamp="20200205 18:58:37.205" level="INFO">${reshape_urls} = [['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
+<msg timestamp="20200205 20:43:22.085" level="INFO">${reshape_urls} = [['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs' 'https://bit.ly/2...</msg>
-<status status="PASS" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
+<status status="PASS" starttime="20200205 20:43:22.084" endtime="20200205 20:43:22.085"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${total_urls}</arg>
 </arguments>
-<msg timestamp="20200205 18:58:37.205" level="INFO">${total_urls} = 27</msg>
-<status status="PASS" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
+<msg timestamp="20200205 20:43:22.086" level="INFO">${total_urls} = 27</msg>
+<status status="PASS" starttime="20200205 20:43:22.086" endtime="20200205 20:43:22.086"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${number_arrays}</arg>
 </arguments>
-<msg timestamp="20200205 18:58:37.205" level="INFO">${number_arrays} = 2</msg>
-<status status="PASS" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
+<msg timestamp="20200205 20:43:22.087" level="INFO">${number_arrays} = 2</msg>
+<status status="PASS" starttime="20200205 20:43:22.087" endtime="20200205 20:43:22.087"></status>
 </kw>
-<status status="PASS" starttime="20200205 18:58:37.189" endtime="20200205 18:58:37.205"></status>
-</kw>
-<kw name="Verify the Numbser of URL Arrays created" library="generate_URLs">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${reshape_urls}</arg>
-</arguments>
-<status status="PASS" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${total_urls}</arg>
-</arguments>
-<status status="PASS" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${number_arrays}</arg>
-</arguments>
-<status status="PASS" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
-</kw>
-<status status="PASS" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
+<status status="PASS" starttime="20200205 20:43:22.083" endtime="20200205 20:43:22.087"></status>
 </kw>
 <kw name="Sending Requests to the server" library="request_manager">
-<kw name="request_pre_processing">
+<kw name="Request Pre Processing" library="multiprocess_requestManager">
+<doc>:param url_arrays:
+:return:</doc>
 <arguments>
 <arg>${reshape_urls}</arg>
 </arguments>
 <assign>
-<var>${request_segment}=</var>
+<var>${request_segment}</var>
 </assign>
-<msg timestamp="20200205 18:58:37.205" level="FAIL">No keyword with name 'request_pre_processing' found.</msg>
-<status status="FAIL" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
+<msg timestamp="20200205 20:43:23.539" level="INFO">Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\lib\threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\PythonScripts\multiprocess_requestManager.py", line 47, in call_request_processors
+    request_process(url_seg_number)
+  File "C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\PythonScripts\multiprocess_requestManager.py", line 87, in request_process
+    total_null_count = total_null_count +null_counter1+null_counter2
+TypeError: unsupported operand type(s) for +: 'int' and 'list'
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\lib\threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\PythonScripts\multiprocess_requestManager.py", line 47, in call_request_processors
+    request_process(url_seg_number)
+  File "C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\PythonScripts\multiprocess_requestManager.py", line 87, in request_process
+    total_null_count = total_null_count +null_counter1+null_counter2
+TypeError: unsupported operand type(s) for +: 'int' and 'list'</msg>
+<msg timestamp="20200205 20:43:23.540" level="INFO">${request_segment} = (19328, 0)</msg>
+<status status="PASS" starttime="20200205 20:43:22.088" endtime="20200205 20:43:23.540"></status>
 </kw>
-<status status="FAIL" starttime="20200205 18:58:37.205" endtime="20200205 18:58:37.205"></status>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${request_segment}</arg>
+</arguments>
+<status status="PASS" starttime="20200205 20:43:23.540" endtime="20200205 20:43:23.541"></status>
 </kw>
-<status status="FAIL" starttime="20200205 18:58:37.189" endtime="20200205 18:58:37.205" critical="yes">No keyword with name 'request_pre_processing' found.</status>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${request_segment}</arg>
+</arguments>
+<msg timestamp="20200205 20:43:23.541" level="INFO">(19328, 0)</msg>
+<status status="PASS" starttime="20200205 20:43:23.541" endtime="20200205 20:43:23.541"></status>
+</kw>
+<status status="PASS" starttime="20200205 20:43:22.087" endtime="20200205 20:43:23.542"></status>
+</kw>
+<status status="PASS" starttime="20200205 20:43:22.082" endtime="20200205 20:43:23.542" critical="yes"></status>
 </test>
 <doc>This file will cover the user story</doc>
-<status status="FAIL" starttime="20200205 18:58:36.373" endtime="20200205 18:58:37.205"></status>
+<status status="PASS" starttime="20200205 20:43:21.062" endtime="20200205 20:43:23.543"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1">Critical Tests</stat>
-<stat pass="1" fail="1">All Tests</stat>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" id="s1" name="testCase1">testCase1</stat>
+<stat pass="2" fail="0" id="s1" name="testCase1">testCase1</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20200205 18:58:37.158" level="ERROR">Error in file 'C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\TestKeywords\request_manager.robot': Importing test library 'C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\PythonScripts\multiprocess_requestManager.py' failed: NameError: name 'length_in_Json' is not defined
-Traceback (most recent call last):
-  File "C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\PythonScripts\multiprocess_requestManager.py", line 15, in &lt;module&gt;
-    length_in_Json
-PYTHONPATH:
-  C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\venv\Scripts\robot.exe
-  C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\python37.zip
-  C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\DLLs
-  C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\lib
-  C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32
-  c:\users\shivam.raghuwanshi\pycharmprojects\api_poc\venv
-  c:\users\shivam.raghuwanshi\pycharmprojects\api_poc\venv\lib\site-packages
-  c:\users\shivam.raghuwanshi\pycharmprojects\api_poc\venv\lib\site-packages\setuptools-40.8.0-py3.7.egg
-  c:\users\shivam.raghuwanshi\pycharmprojects\api_poc\venv\lib\site-packages\pip-19.0.3-py3.7.egg</msg>
-<msg timestamp="20200205 18:58:37.173" level="ERROR">Error in file 'C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\TestKeywords\request_manager.robot': Importing test library 'thread' failed: ModuleNotFoundError: No module named 'thread'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\venv\Scripts\robot.exe
-  C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\python37.zip
-  C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\DLLs
-  C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\lib
-  C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32
-  c:\users\shivam.raghuwanshi\pycharmprojects\api_poc\venv
-  c:\users\shivam.raghuwanshi\pycharmprojects\api_poc\venv\lib\site-packages
-  c:\users\shivam.raghuwanshi\pycharmprojects\api_poc\venv\lib\site-packages\setuptools-40.8.0-py3.7.egg
-  c:\users\shivam.raghuwanshi\pycharmprojects\api_poc\venv\lib\site-packages\pip-19.0.3-py3.7.egg</msg>
 </errors>
 </robot>
