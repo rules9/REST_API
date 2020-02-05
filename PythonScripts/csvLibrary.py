@@ -14,6 +14,7 @@ def read_csv_file(filename):
             data.append(row)
     return data
 
+
 def verify_array(variable,filename):
     ''' This creates a keyword "verify URL array"
 
