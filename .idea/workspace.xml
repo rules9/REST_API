@@ -4,10 +4,10 @@
     <list default="true" id="0cd8e94c-0b83-4fd8-8088-a2879435f317" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonScripts/arrayProcessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonScripts/arrayProcessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonScripts/multiprocess_requestManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonScripts/multiprocess_requestManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/testCase1.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/testCase1.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonScripts/responseManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonScripts/responseManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestData/URLs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/URLs.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestKeywords/generate_URLs.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/generate_URLs.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestKeywords/request_manager.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestKeywords/request_manager.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestReports/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestReports/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestReports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReports/report.html" afterDir="false" />
@@ -184,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580915667128</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Completily working code">
+      <created>1580979704084</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1580979704084</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +247,8 @@
     <MESSAGE value="Started Implementing Multiprocessing" />
     <MESSAGE value="started processing Responses" />
     <MESSAGE value="Completed the Object counts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed the Object counts" />
+    <MESSAGE value="Completily working code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completily working code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

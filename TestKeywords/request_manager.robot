@@ -1,7 +1,8 @@
 *** Settings ***
 Documentation       This file will have the keywords for the Get Request hitting the server and storing response
 Library             Collections
-Library             ../PythonScripts/multiprocess_requestManager.py
+#Library             ../PythonScripts/multiprocess_requestManager.py
+Library             ../PythonScripts/responseManager.py
 Resource            generate_URLs.robot
 
 *** Variables ***

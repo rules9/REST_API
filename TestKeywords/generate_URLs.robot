@@ -11,6 +11,7 @@ ${urls}
 ${reshape_urls}
 ${total_urls}
 ${number_arrays}
+${size_of_array}
 
 *** Keywords ***
 Initialize URL Array from CSV
@@ -20,19 +21,21 @@ Initialize URL Array from CSV
     ${urls}=      flat array      ${urls}
     set global variable           ${urls}
 
+
 URL Array verified
     [Arguments]     ${csv_path}
     verify_array    ${urls}  ${csv_path}
 
 Create Multiple URL Arrays Instance
     [Arguments]     ${batch_size}
-    ${reshape_urls}     ${total_urls}   ${number_arrays}=     reshape array     ${urls}     ${batch_size}
+    ${reshape_urls}     ${total_urls}   ${number_arrays}    ${size_of_array}=     reshape array     ${urls}     ${batch_size}
     set global variable      ${reshape_urls}
     set global variable      ${total_urls}
     set global variable      ${number_arrays}
+    set global variable      ${size_of_array}
 
 Verify the Numbser of URL Arrays created
 #    log to console          ${reshape_urls}
     log to console          ${total_urls}
     log to console          ${number_arrays}
-
+    log to console          ${size_of_array}

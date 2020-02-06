@@ -15,7 +15,8 @@ def flat_array(my_array):
 
 
 
-def reshape_array(url_array,batch_size):
+
+def reshape_array(url_array_recieved, batch_size):
     ''' This creates a keyword named "url array list"
 
     This keyword takes one argument'array', which is converted into multiple array instances and send
@@ -25,17 +26,30 @@ def reshape_array(url_array,batch_size):
     :return: [urls[]]  reshaped array based on batch size, length of array, number of arrays
     '''
 
-    #Creating URL arrays from a single array
+    # Creating URL arrays from a single array
 
-    length_of_array = int(len(url_array))
-    quotient = length_of_array//int(batch_size)
-    remainder = length_of_array%int(batch_size)
+    length_of_array = int(len(url_array_recieved))
+    quotient = length_of_array // int(batch_size)
+    remainder = length_of_array % int(batch_size)
+    reshaped_url_array=[]
+    count_of_arrays=0
+    array_size=0
 
-    if(remainder!=0):
-        url_array = url_array[:((length_of_array)-remainder)]
-        url = np.reshape(url_array,(quotient, int(batch_size)))
-        return url,length_of_array,quotient
+    if (remainder != 0 and quotient >= 1):
+        for array_size in range(2,99):
+            if(length_of_array % array_size ==0):
+                count_of_arrays = length_of_array //array_size
+                reshaped_url_array = np.reshape(url_array_recieved,(count_of_arrays,array_size))
+                break
+            else:
+                continue
+        return reshaped_url_array, length_of_array, count_of_arrays, array_size
 
+
+    if (quotient==0):
+        size_of_each_array =0
+        reshaped_url_array = np.reshape(url_array_recieved, (remainder,1))
+        return reshaped_url_array, length_of_array, (quotient+1),size_of_each_array
     else:
-        url = np.reshape(url_array, (quotient, int(batch_size)))
-        return url, length_of_array, quotient
+        reshaped_url_array = np.reshape(url_array_recieved, (quotient, int(batch_size)))
+        return reshaped_url_array, length_of_array, (quotient), batch_size
