@@ -1,6 +1,7 @@
 from itertools import chain
 import numpy as np
 
+
 def flat_array(my_array):
     '''This creates a keyword named "flat array"
 
@@ -12,9 +13,6 @@ def flat_array(my_array):
     # Multiplying arrays
     flatten_list = list(chain.from_iterable(my_array))
     return flatten_list
-
-
-
 
 def reshape_array(url_array_recieved, batch_size):
     ''' This creates a keyword named "url array list"

@@ -14,11 +14,14 @@ per_segment = 10
 
 #=============================================================================================Request Manager===============================
 
-def request_pre_processing(url_arrays):
-    '''
+def process_requests(url_arrays):
+    ''' Keyword = request processing
+
+        This keyword process the coming URL array requests.
+        Function will segregate the Requests into multithread and each thread will perform the desired task.
 
     :param url_arrays:
-    :return:
+    :return: count of object in Response, Total null values in Response
     '''
 
     global count_of_objects
@@ -57,11 +60,14 @@ def request_pre_processing(url_arrays):
         thread_segment[item].join()
 
     return count_of_objects,total_null_count
-
-
 def request_process(segment_no):
-    '''
+    ''' Keyword request process
 
+        This keword will process each of the request coming with Thread and send the
+        corresponding response
+
+    :param segment number of URL:
+    :return: None
     '''
 
     segment_num = int(segment_no)
@@ -85,14 +91,15 @@ def request_process(segment_no):
     count_of_objects = int(count_of_objects + count)
     total_null_count = int(total_null_count + null_counter)
 
-
 #=============================================================================================Response Manager===============================
 
 def objects_in_response(response_content):
-    '''
+    ''' Keyword object in response
+        This keyword will process the response and send back
+        the number of object in the response
 
-
-    :return:
+    :param: The takes the Response content as Parameter
+    :return: nubmer of objects in Response
     '''
 
     count_of_objects_local =0
@@ -100,15 +107,12 @@ def objects_in_response(response_content):
     count_of_objects_local =len(item_dict)
 
     return count_of_objects_local
-
-
-
 def count_of_null(response_content):
-    '''
+    ''' :keyword This creates the keyword as count of null
+        This will count the null values in the JSON response coming
 
-
-    :param response_content:
-    :return:
+    :param response_content of response:
+    :return: occurance of null object
     '''
     occurance = response_content.find("null")
     return occurance

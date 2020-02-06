@@ -1,26 +1,18 @@
 *** Settings ***
-Documentation       This file will have the keywords for the Get Request hitting the server and storing response
-Library             Collections
-#Library             ../PythonScripts/multiprocess_requestManager.py
-Library             ../PythonScripts/responseManager.py
+Documentation       This file will have the keywords for the Get Request hitting the server and storing the response
+Library             ../PythonScripts/requestManager.py
 Resource            generate_URLs.robot
 
 *** Variables ***
-${request_segment}
-${response1}
-${response2}
-${response3}
-${segment_counter1}      0
-${segment_counter2}      1
-${segment_counter3}      2
-${segment_counter4}      3
+${response_segment}
 
 *** Keywords ***
 Sending Requests to the server
-    ${request_segment}=     request pre processing      ${reshape_urls}
-    log to console          ${request_segment}
-    log                     ${request_segment}
 
+    ${response_segment}=     process requests      ${reshape_urls}
+    log                     ${response_segment}
+
+Verify the Response with Error(if any)
 
 
 
