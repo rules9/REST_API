@@ -28,14 +28,14 @@ def reshape_array(url_array,batch_size):
     #Creating URL arrays from a single array
 
     length_of_array = int(len(url_array))
-    print(length_of_array)
     quotient = length_of_array//int(batch_size)
     remainder = length_of_array%int(batch_size)
 
     if(remainder!=0):
-        url_array = url_array[:length_of_array-remainder]
+        url_array = url_array[:((length_of_array)-remainder)]
         url = np.reshape(url_array,(quotient, int(batch_size)))
         return url,length_of_array,quotient
+
     else:
         url = np.reshape(url_array, (quotient, int(batch_size)))
         return url, length_of_array, quotient

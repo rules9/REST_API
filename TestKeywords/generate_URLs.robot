@@ -19,7 +19,6 @@ Initialize URL Array from CSV
     set global variable           ${urls}
     ${urls}=      flat array      ${urls}
     set global variable           ${urls}
-#    log to console                ${urls}
 
 URL Array verified
     [Arguments]     ${csv_path}
@@ -32,8 +31,8 @@ Create Multiple URL Arrays Instance
     set global variable      ${total_urls}
     set global variable      ${number_arrays}
 
-#Verify the Numbser of URL Arrays created
+Verify the Numbser of URL Arrays created
 #    log to console          ${reshape_urls}
-#    log to console          ${total_urls}
-#    log to console          ${number_arrays}
+    log to console          ${total_urls}
+    log to console          ${number_arrays}
 
