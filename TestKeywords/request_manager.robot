@@ -4,15 +4,21 @@ Library             ../PythonScripts/requestManager.py
 Resource            generate_URLs.robot
 
 *** Variables ***
-${response_segment}
+${response_objects}
+${total_null_values}
+${errors_&_count}
 
 *** Keywords ***
-Sending Requests to the server
 
-    ${response_segment}=     process requests      ${reshape_urls}
-    log                     ${response_segment}
+Sending Requests to the server
+    ${response_objects}     ${total_null_values}    ${errors_&_count}=     process requests      ${reshape_urls}
+    set global variable     ${errors_&_count}
+    log                     ${response_objects}
+    log                     ${total_null_values}
+
 
 Verify the Response with Error(if any)
+    log                     ${errors_&_count}
 
 
 

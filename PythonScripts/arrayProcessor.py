@@ -1,6 +1,6 @@
 from itertools import chain
 import numpy as np
-
+import sys
 
 def flat_array(my_array):
     '''This creates a keyword named "flat array"
@@ -33,21 +33,23 @@ def reshape_array(url_array_recieved, batch_size):
     count_of_arrays=0
     array_size=0
 
-    if (remainder != 0 and quotient >= 1):
-        for array_size in range(2,99):
-            if(length_of_array % array_size ==0):
-                count_of_arrays = length_of_array //array_size
-                reshaped_url_array = np.reshape(url_array_recieved,(count_of_arrays,array_size))
-                break
-            else:
-                continue
-        return reshaped_url_array, length_of_array, count_of_arrays, array_size
+    try:
+        if (remainder != 0 and quotient >= 1):
+            for arrays_size in range(2,99):
+                if(length_of_array % array_size ==0):
+                    count_of_arrays = length_of_array //array_size
+                    reshaped_url_array = np.reshape(url_array_recieved,(count_of_arrays,array_size))
+                    break
+                else:
+                    continue
+            return reshaped_url_array, length_of_array, count_of_arrays, array_size
+        elif (quotient==0):
+            size_of_each_array =0
+            reshaped_url_array = np.reshape(url_array_recieved, (remainder,1))
+            return reshaped_url_array, length_of_array, (quotient+1),size_of_each_array
+        else:
+            reshaped_url_array = np.reshape(url_array_recieved, (quotient, int(batch_size)))
+            return reshaped_url_array, length_of_array, (quotient), batch_size
 
-
-    if (quotient==0):
-        size_of_each_array =0
-        reshaped_url_array = np.reshape(url_array_recieved, (remainder,1))
-        return reshaped_url_array, length_of_array, (quotient+1),size_of_each_array
-    else:
-        reshaped_url_array = np.reshape(url_array_recieved, (quotient, int(batch_size)))
-        return reshaped_url_array, length_of_array, (quotient), batch_size
+    except Exception as py_exception:
+        exe_info = sys.exc_info()

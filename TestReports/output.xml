@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200206 19:44:08.412" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200207 15:11:53.276" rpa="false">
 <suite id="s1" name="UserStory US1" source="C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\TestCases\UserStory_US1.robot">
 <test id="s1-t1" name="1. Array of all the URLs given in csv should get created and verifed">
 <kw name="Initialize URL Array from CSV" library="generate_URLs">
@@ -14,8 +14,8 @@
 <assign>
 <var>${urls}</var>
 </assign>
-<msg timestamp="20200206 19:44:09.062" level="INFO">${urls} = [['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/...</msg>
-<status status="PASS" starttime="20200206 19:44:09.059" endtime="20200206 19:44:09.062"></status>
+<msg timestamp="20200207 15:11:53.925" level="INFO">${urls} = [['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/...</msg>
+<status status="PASS" starttime="20200207 15:11:53.923" endtime="20200207 15:11:53.925"></status>
 </kw>
 <kw name="Flat Array" library="arrayProcessor">
 <doc>This creates a keyword named "flat array"</doc>
@@ -25,18 +25,18 @@
 <assign>
 <var>${urls}</var>
 </assign>
-<msg timestamp="20200206 19:44:09.062" level="INFO">${urls} = ['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2...</msg>
-<status status="PASS" starttime="20200206 19:44:09.062" endtime="20200206 19:44:09.062"></status>
+<msg timestamp="20200207 15:11:53.925" level="INFO">${urls} = ['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2...</msg>
+<status status="PASS" starttime="20200207 15:11:53.925" endtime="20200207 15:11:53.926"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${urls}</arg>
 </arguments>
-<msg timestamp="20200206 19:44:09.063" level="INFO">${urls} = ['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2...</msg>
-<status status="PASS" starttime="20200206 19:44:09.062" endtime="20200206 19:44:09.063"></status>
+<msg timestamp="20200207 15:11:53.926" level="INFO">${urls} = ['https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2MMhOhs', 'https://bit.ly/2...</msg>
+<status status="PASS" starttime="20200207 15:11:53.926" endtime="20200207 15:11:53.926"></status>
 </kw>
-<status status="PASS" starttime="20200206 19:44:09.059" endtime="20200206 19:44:09.063"></status>
+<status status="PASS" starttime="20200207 15:11:53.922" endtime="20200207 15:11:53.926"></status>
 </kw>
 <kw name="verified URL Array" library="generate_URLs">
 <arguments>
@@ -48,11 +48,11 @@
 <arg>${urls}</arg>
 <arg>${csv_path}</arg>
 </arguments>
-<status status="PASS" starttime="20200206 19:44:09.064" endtime="20200206 19:44:09.065"></status>
+<status status="PASS" starttime="20200207 15:11:53.927" endtime="20200207 15:11:53.928"></status>
 </kw>
-<status status="PASS" starttime="20200206 19:44:09.063" endtime="20200206 19:44:09.065"></status>
+<status status="PASS" starttime="20200207 15:11:53.927" endtime="20200207 15:11:53.928"></status>
 </kw>
-<status status="PASS" starttime="20200206 19:44:09.058" endtime="20200206 19:44:09.065" critical="yes"></status>
+<status status="PASS" starttime="20200207 15:11:53.922" endtime="20200207 15:11:53.929" critical="yes"></status>
 </test>
 <test id="s1-t2" name="2. Array URL distribution and corresponding Request-hit should get completed successfully">
 <kw name="Create Multiple URL Arrays Instance" library="generate_URLs">
@@ -71,77 +71,84 @@
 <var>${number_arrays}</var>
 <var>${size_of_array}</var>
 </assign>
-<msg timestamp="20200206 19:44:09.068" level="INFO">${reshape_urls} = [['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
+<msg timestamp="20200207 15:11:53.931" level="INFO">${reshape_urls} = [['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs']
  ['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.l...</msg>
-<msg timestamp="20200206 19:44:09.068" level="INFO">${total_urls} = 50</msg>
-<msg timestamp="20200206 19:44:09.068" level="INFO">${number_arrays} = 10</msg>
-<msg timestamp="20200206 19:44:09.068" level="INFO">${size_of_array} = 5</msg>
-<status status="PASS" starttime="20200206 19:44:09.067" endtime="20200206 19:44:09.068"></status>
+<msg timestamp="20200207 15:11:53.931" level="INFO">${total_urls} = 50</msg>
+<msg timestamp="20200207 15:11:53.931" level="INFO">${number_arrays} = 10</msg>
+<msg timestamp="20200207 15:11:53.931" level="INFO">${size_of_array} = 5</msg>
+<status status="PASS" starttime="20200207 15:11:53.930" endtime="20200207 15:11:53.931"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${reshape_urls}</arg>
 </arguments>
-<msg timestamp="20200206 19:44:09.069" level="INFO">${reshape_urls} = [['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
+<msg timestamp="20200207 15:11:53.933" level="INFO">${reshape_urls} = [['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.ly/2MMhOhs']
  ['https://bit.ly/2MMhOhs' 'https://bit.ly/2MMhOhs'
   'https://bit.l...</msg>
-<status status="PASS" starttime="20200206 19:44:09.068" endtime="20200206 19:44:09.069"></status>
+<status status="PASS" starttime="20200207 15:11:53.932" endtime="20200207 15:11:53.933"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${total_urls}</arg>
 </arguments>
-<msg timestamp="20200206 19:44:09.069" level="INFO">${total_urls} = 50</msg>
-<status status="PASS" starttime="20200206 19:44:09.069" endtime="20200206 19:44:09.069"></status>
+<msg timestamp="20200207 15:11:53.934" level="INFO">${total_urls} = 50</msg>
+<status status="PASS" starttime="20200207 15:11:53.933" endtime="20200207 15:11:53.934"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${number_arrays}</arg>
 </arguments>
-<msg timestamp="20200206 19:44:09.069" level="INFO">${number_arrays} = 10</msg>
-<status status="PASS" starttime="20200206 19:44:09.069" endtime="20200206 19:44:09.070"></status>
+<msg timestamp="20200207 15:11:53.935" level="INFO">${number_arrays} = 10</msg>
+<status status="PASS" starttime="20200207 15:11:53.935" endtime="20200207 15:11:53.935"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${size_of_array}</arg>
 </arguments>
-<msg timestamp="20200206 19:44:09.070" level="INFO">${size_of_array} = 5</msg>
-<status status="PASS" starttime="20200206 19:44:09.070" endtime="20200206 19:44:09.070"></status>
+<msg timestamp="20200207 15:11:53.936" level="INFO">${size_of_array} = 5</msg>
+<status status="PASS" starttime="20200207 15:11:53.936" endtime="20200207 15:11:53.936"></status>
 </kw>
-<status status="PASS" starttime="20200206 19:44:09.066" endtime="20200206 19:44:09.070"></status>
+<status status="PASS" starttime="20200207 15:11:53.930" endtime="20200207 15:11:53.936"></status>
 </kw>
 <kw name="Verify the Numbser of URL Arrays created" library="generate_URLs">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
+<arg>${reshape_urls}</arg>
+</arguments>
+<status status="PASS" starttime="20200207 15:11:53.937" endtime="20200207 15:11:53.938"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
 <arg>${total_urls}</arg>
 </arguments>
-<status status="PASS" starttime="20200206 19:44:09.071" endtime="20200206 19:44:09.071"></status>
+<status status="PASS" starttime="20200207 15:11:53.938" endtime="20200207 15:11:53.938"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${number_arrays}</arg>
 </arguments>
-<status status="PASS" starttime="20200206 19:44:09.071" endtime="20200206 19:44:09.072"></status>
+<status status="PASS" starttime="20200207 15:11:53.938" endtime="20200207 15:11:53.939"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${size_of_array}</arg>
 </arguments>
-<status status="PASS" starttime="20200206 19:44:09.072" endtime="20200206 19:44:09.072"></status>
+<status status="PASS" starttime="20200207 15:11:53.939" endtime="20200207 15:11:53.939"></status>
 </kw>
-<status status="PASS" starttime="20200206 19:44:09.071" endtime="20200206 19:44:09.072"></status>
+<status status="PASS" starttime="20200207 15:11:53.936" endtime="20200207 15:11:53.939"></status>
 </kw>
 <kw name="Sending Requests to the server" library="request_manager">
 <kw name="Process Requests" library="requestManager">
@@ -150,34 +157,55 @@
 <arg>${reshape_urls}</arg>
 </arguments>
 <assign>
-<var>${response_segment}</var>
+<var>${response_objects}</var>
+<var>${total_null_values}</var>
+<var>${errors_&amp;_count}</var>
 </assign>
-<msg timestamp="20200206 19:44:53.743" level="INFO">Exception in thread Thread-2:
-Traceback (most recent call last):
-  File "C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\lib\threading.py", line 926, in _bootstrap_inner
-    self.run()
-  File "C:\Users\shivam.raghuwanshi\AppData\Local\Programs\Python\Python37-32\lib\threading.py", line 870, in run
-    self._target(*self._args, **self._kwargs)
-  File "C:\Users\shivam.raghuwanshi\PycharmProjects\API_POC\PythonScripts\requestManager.py", line 80, in request_process
-    for urls_item in url_segment[segment_num]:
-IndexError: list index out of range</msg>
-<msg timestamp="20200206 19:44:53.743" level="INFO">${response_segment} = (483200, 10800)</msg>
-<status status="PASS" starttime="20200206 19:44:09.073" endtime="20200206 19:44:53.743"></status>
+<msg timestamp="20200207 15:12:51.890" level="INFO">${response_objects} = 483200</msg>
+<msg timestamp="20200207 15:12:51.890" level="INFO">${total_null_values} = 2160</msg>
+<msg timestamp="20200207 15:12:51.890" level="INFO">${errors_&amp;_count} = {"('Connection aborted.', OSError(0, 'Error'))": 1}</msg>
+<status status="PASS" starttime="20200207 15:11:53.940" endtime="20200207 15:12:51.890"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${errors_&amp;_count}</arg>
+</arguments>
+<msg timestamp="20200207 15:12:51.891" level="INFO">${errors_&amp;_count} = {"('Connection aborted.', OSError(0, 'Error'))": 1}</msg>
+<status status="PASS" starttime="20200207 15:12:51.890" endtime="20200207 15:12:51.891"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${response_segment}</arg>
+<arg>${response_objects}</arg>
 </arguments>
-<msg timestamp="20200206 19:44:53.744" level="INFO">(483200, 10800)</msg>
-<status status="PASS" starttime="20200206 19:44:53.744" endtime="20200206 19:44:53.744"></status>
+<msg timestamp="20200207 15:12:51.891" level="INFO">483200</msg>
+<status status="PASS" starttime="20200207 15:12:51.891" endtime="20200207 15:12:51.891"></status>
 </kw>
-<status status="PASS" starttime="20200206 19:44:09.073" endtime="20200206 19:44:53.746"></status>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${total_null_values}</arg>
+</arguments>
+<msg timestamp="20200207 15:12:51.892" level="INFO">2160</msg>
+<status status="PASS" starttime="20200207 15:12:51.892" endtime="20200207 15:12:51.892"></status>
 </kw>
-<status status="PASS" starttime="20200206 19:44:09.066" endtime="20200206 19:44:53.746" critical="yes"></status>
+<status status="PASS" starttime="20200207 15:11:53.939" endtime="20200207 15:12:51.892"></status>
+</kw>
+<kw name="Verify the Response with Error(if any)" library="request_manager">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${errors_&amp;_count}</arg>
+</arguments>
+<status status="PASS" starttime="20200207 15:12:51.893" endtime="20200207 15:12:51.893"></status>
+</kw>
+<status status="PASS" starttime="20200207 15:12:51.893" endtime="20200207 15:12:51.894"></status>
+</kw>
+<status status="PASS" starttime="20200207 15:11:53.929" endtime="20200207 15:12:51.894" critical="yes"></status>
 </test>
 <doc>This file will cover the user story of verifying GET request with Object Count and Null occurance</doc>
-<status status="PASS" starttime="20200206 19:44:08.422" endtime="20200206 19:44:53.746"></status>
+<status status="PASS" starttime="20200207 15:11:53.286" endtime="20200207 15:12:51.896"></status>
 </suite>
 <statistics>
 <total>

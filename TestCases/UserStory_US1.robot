@@ -16,4 +16,4 @@ ${batch_size}   5
     Create Multiple URL Arrays Instance         ${batch_size}
     Verify the Numbser of URL Arrays created
     Sending Requests to the server
-#    Verify the Response with Error(if any)
+    Verify the Response with Error(if any)
